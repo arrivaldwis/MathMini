@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="591dp" >
+
+    <EditText
+        android:id="@+id/etNilai1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="0" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/etNilai1"
+        android:text="o"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spNilai1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNilai1"
+        android:layout_below="@+id/etNilai1"
+        android:layout_marginTop="52dp"
+        android:layout_toLeftOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spNilai1"
+        android:layout_below="@+id/etNilai1"
+        android:layout_marginTop="22dp"
+        android:text="Konversi Ke"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_flat_blue"
+        android:onClick="btnHelp"
+        android:text="Help"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Btnequal_id"
+        android:layout_alignLeft="@+id/spNilai1"
+        android:layout_marginBottom="20dp"
+        android:text="tes"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etHasil"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="53dp"
+        android:text="Masukan Nilai"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/Btnequal_id"
+        style="@drawable/btn_orange"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_flat_blue"
+        android:onClick="btnHasildiklik"
+        android:text="Konversi"
+        android:textColor="#fff"
+        android:textSize="48sp" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_flat_blue"
+        android:gravity="left"
+        android:onClick="btnBack"
+        android:padding="10dp"
+        android:text="←"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/etHasil"
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnHelp"
+		style="?android:listSeparatorTextViewStyle"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="right"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:textSize="42dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etHasil"
+        android:layout_toLeftOf="@+id/btnHelp"
+        android:layout_toRightOf="@+id/Button01"
+        android:background="#000"
+        android:text="MathMini"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+</ScrollView>

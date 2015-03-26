@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:background="#fff" >
+
+        <Button
+            android:id="@+id/btnLingkaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnSegitiga"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/lingkaran"
+            android:onClick="btnLingkaran" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnSegitiga"
+            android:background="@drawable/btn_flat_blue"
+            android:gravity="left"
+            android:onClick="btnBack"
+            android:padding="10dp"
+            android:text="←"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etHasil"
+            android:layout_width="fill_parent"
+            android:layout_height="105dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnBack"
+			style="?android:listSeparatorTextViewStyle"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="38dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnPersegi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnLingkaran"
+            android:layout_alignBottom="@+id/btnLingkaran"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/persegi"
+            android:onClick="btnPersegi" />
+
+        <Button
+            android:id="@+id/btnBK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/etHasil"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/belahketupat"
+            android:onClick="btnBelahKetupat" />
+
+        <Button
+            android:id="@+id/btnPersegiPanjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnTrapesium"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/persegipanjang"
+            android:onClick="btnPersegiPanjang" />
+
+        <Button
+            android:id="@+id/btnTrapesium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnSegitiga"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/trapesium"
+            android:onClick="btnTrapesium" />
+
+        <Button
+            android:id="@+id/btnJG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnTrapesium"
+            android:layout_alignBottom="@+id/btnTrapesium"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/jajar"
+            android:onClick="btnJajarGenjang" />
+
+        <Button
+            android:id="@+id/btnSegitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btnTrapesium"
+            android:layout_below="@+id/btnBK"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/segitiga"
+            android:onClick="btnSegitiga" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnBack"
+            android:background="#000"
+            android:text="MathMini"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

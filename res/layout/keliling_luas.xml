@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="615dp"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etSisi"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="0" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etSisi"
+        android:layout_alignLeft="@+id/etSisi"
+        android:layout_marginBottom="38dp"
+        android:text="Sisi"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/Btnequal_id"
+        style="@drawable/btn_flat_blue"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_flat_blue"
+        android:onClick="btnHasildiklik"
+        android:text="Hitung"
+        android:textColor="#fff"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etSisi"
+        android:layout_below="@+id/etSisi"
+        android:text="Lebar"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/etLebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/etSisi"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:visibility="gone"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etLebar"
+        android:layout_below="@+id/etLebar"
+        android:text="Alas"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/txtAlas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_alignRight="@+id/etLebar"
+        android:layout_below="@+id/TextView01"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:visibility="gone"
+        android:text="0" />
+
+    <Spinner
+        android:id="@+id/spNilai1"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_alignRight="@+id/etSisi"
+        android:layout_alignTop="@+id/radioGroup1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etHasil"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="46dp" >
+
+        <RadioButton
+            android:id="@+id/rdKel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Keliling" />
+
+        <RadioButton
+            android:id="@+id/rdPP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luas" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_below="@+id/etHasil"
+        android:text="tes"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView1"
+        android:background="@drawable/btn_flat_blue"
+        android:gravity="left"
+        android:onClick="btnBack"
+        android:padding="10dp"
+        android:text="←"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_flat_blue"
+        android:onClick="btnHelp"
+        android:text="Help"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etHasil"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnBack"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="right"
+        android:maxLength="11"
+        android:padding="10dp"
+		style="?android:listSeparatorTextViewStyle"
+        android:textSize="42dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAlas"
+        android:layout_below="@+id/txtAlas"
+        android:text="sisiD"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/etSisiD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignRight="@+id/txtAlas"
+        android:layout_below="@+id/textView4"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        android:text="0" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnHelp"
+        android:layout_toRightOf="@+id/btnBack"
+        android:background="#000"
+        android:text="MathMini"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp" >
+
+        <Button
+            android:id="@+id/btnDua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn7"
+            android:layout_alignBottom="@+id/btn7"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_circle"
+            android:onClick="btnDua"
+            android:text="2"
+            android:textColor="#000"
+            android:textSize="42dp" />
+
+        <Button
+            android:id="@+id/btnLima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnEmpat"
+            android:layout_alignBottom="@+id/btnEmpat"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_circle"
+            android:onClick="btnLima"
+            android:text="5"
+            android:textColor="#000"
+            android:textSize="42dp" />
+
+        <Button
+            android:id="@+id/btnEnam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnLima"
+            android:layout_alignBottom="@+id/btnLima"
+            android:layout_alignLeft="@+id/btnTiga"
+            android:background="@drawable/btn_circle"
+            android:text="6"
+            android:onClick="btnEnam"
+            android:textColor="#000"
+            android:textSize="42dp" />
+
+        <Button
+            android:id="@+id/btnDelapan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnTujuh"
+            android:layout_alignBottom="@+id/btnTujuh"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_circle"
+            android:onClick="btnDelapan"
+            android:text="8"
+            android:textColor="#000"
+            android:textSize="42dp" />
+
+        <Button
+            android:id="@+id/btnSembilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnDelapan"
+            android:layout_alignBottom="@+id/btnDelapan"
+            android:layout_alignLeft="@+id/btnEnam"
+            android:background="@drawable/btn_circle"
+            android:text="9"
+            android:onClick="btnSembilan"
+            android:textColor="#000"
+            android:textSize="42dp" />
+
+        <Button
+            android:id="@+id/btnSepuluh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnTujuh"
+            android:layout_below="@+id/btnTujuh"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_circle"
+            android:text="0"
+            android:onClick="btnNol"
+            android:textColor="#000"
+            android:textSize="42dp" />
+
+        <Button
+            android:id="@+id/btnTujuh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnEmpat"
+            android:layout_below="@+id/btnEmpat"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn_circle"
+            android:text="7"
+            android:onClick="btnTujuh"
+            android:textColor="#000"
+            android:textSize="42dp" />
+
+        <Button
+            android:id="@+id/btnEmpat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn7"
+            android:layout_below="@+id/btn7"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/btn_circle"
+            android:text="4"
+            android:onClick="btnEmpat"
+            android:textColor="#000"
+            android:textSize="42dp" />
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_flat_blue"
+            android:gravity="left"
+            android:onClick="btnBack"
+            android:padding="10dp"
+            android:text="←"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etHasil"
+            android:layout_width="fill_parent"
+            android:layout_height="105dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnback"
+            style="?android:listSeparatorTextViewStyle"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="center"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="75dp" />
+
+        <Button
+            android:id="@+id/btnTiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnEmpat"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_circle"
+            android:onClick="btnTiga"
+            android:text="3"
+            android:textColor="#000"
+            android:textSize="42dp" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/etHasil"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn_circle"
+            android:onClick="btnSatu"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="42dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnback"
+            android:background="#000"
+            android:text="MathMini"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

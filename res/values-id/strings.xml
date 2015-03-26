@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="action_settings">Tentang</string>
+    <string name="app_name">MathMini</string>
+    <string name="hello_world">Halo Dunia!</string>
+
+</resources>
